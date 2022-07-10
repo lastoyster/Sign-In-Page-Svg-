@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+}
+
+body {
+  background: #fff;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #333333;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 3.5rem;
+  line-height: 1.1;
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.75rem;
+}
+
+p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+a:focus {
+  border: 2px solid #1d1c3b;
+  box-shadow: 0px 0px 10px 0px rgba(29, 28, 59, 0.3);
+  outline: none;
+}
+
+.wrap {
+  align-items: stretch;
+  display: flex;
+  flex-flow: row wrap;
+  height: 100vh;
+  position: relative;
+}
+.wrap .left-column, .wrap .right-column {
+  width: 100%;
+}
+.wrap .left-column {
+  background: url(https://assets.codepen.io/772926/hero-bottom.png) right bottom no-repeat, url(https://assets.codepen.io/772926/hero-top.png) left top no-repeat;
+  background-size: 40%;
+  background-color: #1d1c3b;
+}
+.wrap .left-column .hero {
+  position: relative;
+  max-width: 600px;
+  padding: 32px;
+  width: 100%;
+}
+.wrap .left-column .hero h1 {
+  color: #fff;
+}
+.wrap .left-column .hero h1 .dot {
+  color: #0cbc8e;
+}
+.wrap .left-column .hero p {
+  color: #fff;
+  font-size: 1.25rem;
+}
+.wrap .left-column .hero p.kicker {
+  color: #0cbc8e;
+  font-weight: 700;
+}
+.wrap .right-column .form {
+  padding: 32px;
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  padding: 32px;
+  z-index: 1;
+}
+.wrap .right-column .form label {
+  display: block;
+  font-weight: 300;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  display: none;
+}
+.wrap .right-column .form input[type=text],
+.wrap .right-column .form input[type=password] {
+  background-color: #f6f4f8;
+  border: 2px solid #f6f4f8;
+  padding: 0.75rem 1.5rem 0.75rem 3.5rem;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 0.4rem;
+  transition: all 0.2s ease-out;
+  background-position: 1.25rem center;
+  background-repeat: no-repeat;
+  background-size: 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.wrap .right-column .form input[type=text]:focus,
+.wrap .right-column .form input[type=password]:focus {
+  box-shadow: 0 0 0 3px #fff, 0 0 0 5px #1d1c3b;
+  outline: none !important;
+}
+.wrap .right-column .form input[type=text]::-webkit-input-placeholder,
+.wrap .right-column .form input[type=password]::-webkit-input-placeholder {
+  font-family: "Inter", sans-serif;
+}
+.wrap .right-column .form input[type=text]::-moz-placeholder,
+.wrap .right-column .form input[type=password]::-moz-placeholder {
+  font-family: "Inter", sans-serif;
+}
+.wrap .right-column .form input[type=text]:-ms-input-placeholder,
+.wrap .right-column .form input[type=password]:-ms-input-placeholder {
+  font-family: "Inter", sans-serif;
+}
+.wrap .right-column .form input[type=text]:-moz-placeholder,
+.wrap .right-column .form input[type=password]:-moz-placeholder {
+  font-family: "Inter", sans-serif;
+}
+.wrap .right-column .form input[type=checkbox]:focus {
+  outline: 2px solid #1d1c3b;
+  box-shadow: 0px 0px 10px 0px rgba(29, 28, 59, 0.3);
+}
+.wrap .right-column .form input[type=text] {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23737373' class='bi bi-person-fill' viewBox='0 0 16 16'%3E%3Cpath d='M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 1rem 1rem;
+}
+.wrap .right-column .form input[type=password] {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23737373' class='bi bi-lock-fill' viewBox='0 0 16 16'%3E%3Cpath d='M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 1rem 1rem;
+}
+.wrap .right-column .form .forgotten {
+  margin-top: 1.5rem;
+  font-size: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+.wrap .right-column .form .forgotten:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.wrap .right-column .form .forgotten a {
+  font-size: 0.8rem;
+}
+.wrap .right-column .form .forgotten .forgot-link {
+  float: right;
+  margin: 0;
+}
+.wrap .right-column .form .remember {
+  display: block;
+  font-size: 0.8rem;
+  float: left;
+  margin-bottom: 0;
+}
+.wrap .right-column .form .copyright {
+  width: 50%;
+  position: fixed;
+  bottom: 0;
+  padding: 1rem 2rem;
+  background: #fff;
+  left: 50%;
+}
+.wrap .right-column .form .copyright p {
+  font-size: 0.75rem;
+  text-align: center;
+  color: #737373;
+}
+
+.btn {
+  border-radius: 6px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 700;
+  border: 2px solid transparent;
+  font-size: 1rem;
+  outline: 0;
+  transition: all 0.2s ease-out;
+  display: block;
+  cursor: pointer;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+}
+.btn.btn-primary {
+  background-color: #0cbc8e;
+  color: #fff;
+}
+.btn.btn-primary.btn-primary:hover {
+  background-color: #0ba980;
+  color: #fff;
+  border: 2px solid #0ba980;
+  outline: 0;
+}
+.btn.btn-primary.btn-primary:active, .btn.btn-primary.btn-primary:focus, .btn.btn-primary.btn-primary:target, .btn.btn-primary.btn-primary:active:focus {
+  box-shadow: 0 0 0 3px #fff, 0 0 0 5px #1d1c3b;
+  outline: none !important;
+}
+.btn.btn-secondary {
+  background: transparent;
+  border: 2px solid #0cbc8e;
+  color: #0cbc8e;
+}
+.btn.btn-secondary.btn-secondary:hover {
+  border: 2px solid #0ba980;
+  outline: 0;
+}
+.btn.btn-secondary.btn-secondary:active, .btn.btn-secondary.btn-secondary:focus, .btn.btn-secondary.btn-secondary:target, .btn.btn-secondary.btn-secondary:active:focus {
+  box-shadow: 0 0 0 3px #fff, 0 0 0 5px #1d1c3b;
+  outline: none !important;
+}
+
+@media (min-width: 768px) {
+  .wrap .right-column, .wrap .left-column {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 50%;
+  }
+}
+@media (max-height: 650px) {
+  .wrap .right-column .form .copyright {
+    width: 100%;
+    position: static;
+    padding: 1rem 2rem;
+    left: 50%;
+  }
+}
